@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <form>
+        <container class="form">
+            <header>
+                <div class="header">
+                    Intake Main Flow
+                </div>
+            </header>
+            <div class="mandatory">
+                <span class="mandatory-field">&ast;</span>
+                Mandatory field
+            </div>
+            <div class="info">Information</div>
+
+            <div class="block">
+                <div class="left">
+                    <label class="label">Intake Type<span class="mandatory-field">&ast;&#40select&#41</span></label>
+                    <select class="width" name="" required>
+                        <option value="">text 1</option>
+                        <option value="">text 2</option>
+                        <option value="">text 3</option>
+                    </select>
+                </div>
+
+                <div class="right">
+                    <span>Enrollment Initiation Date (Optional)</span>
+                    <input class="width calendar2" type="date" id="" name="" value="2018-07-22" min="2018-01-01"
+                        max="2024-12-31" readonly>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <span>phone</span>
+                    <input class="width" id="tel" type="tel" placeholder="+38">
+                </div>
+
+                <div class="right">
+                    <span>Application Category<span class="mandatory-field">&ast;</span></span>
+                    <select class="width" id="select" required>
+                        <option value="Referral">Child Support</option>
+                        <option value="1">young</option>
+                        <option value="2">man</option>
+                        <option value="3">woman</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <span>email</span>
+                    <input class="width" id="email" type="email" placeholder="pisya@gmail.com">
+                </div>
+
+                <div class="right">
+                    <span>Enrollment Submission Date (Optional)</span>
+                    <input class="calendar2 width" type="text" placeholder="05/11/2021" readonly>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <span>Application Registration (Optional)</span>
+                    <select class="width" id="select">
+                        <option value="Application">APP0000116</option>
+                        <option value="1">1111111</option>
+                        <option value="2">2222222</option>
+                        <option value="3">3333333</option>
+                    </select>
+                </div>
+
+                <div class="right"></div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <span>Additional Information Requested Date (Optional)</span>
+                    <input class="width calendar" type="date">
+                </div>
+
+                <div class="right checked">
+                    <input class="" type="checkbox" name="" id="">
+                    <span>Purged</span>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <span>Remaining Days Before Referral is Purged (Optional)</span>
+                    <input class="width" type="text" id="text">
+                </div>
+
+                <div class="right pad1">
+                    <span>Exempt from Paternity (Optional) (select)</span>
+                    <select class="width" id="select" required>
+                        <option>No</option>
+                        <option>Yes</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <label for="">Fee Payment Date (Optional)</label>
+                    <input class="width calendar" id="" type="date">
+                </div>
+
+                <div class="right">
+                    <span>Enrollment Status (Optional)</span>
+                    <select class="width" id="select" required>
+                        <option>Worklisted</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+
+                    <span><input type="checkbox" id="chek">Application Fee Processed</span>
+                </div>
+                <div class="right"></div>
+            </div>
+
+            <hr class="her">
+
+            <div class="info">Maternity Information</div>
+            <div class="block">
+                <div class="left">
+
+                    <span><input class="" type="checkbox" id="">Are you requesting child support services for an
+                        unborn child?
+                    </span>
+                </div>
+
+                <div class="right">
+                    <span>Other known biological parent? (Optional)</span>
+                    <select class="width" id="" type="" placeholder="None">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+
+            <hr class="her">
+
+            <div class="info">Official Use</div>
+            <div class="block">
+                <div class="left">
+                    <span>Case Category (Optional)</span>
+                    <select class="width" id="select" required>
+                        <option value="Referral">Active IV-A</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <div class="right">
+                    <span>IV-D Indicator<span class="mandatory-field">&ast;</span></span>
+                    <select class="width" id="select" required>
+                        <option value="Referral">Non-IV-D</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="block">
+
+                <div class="left">
+                    <span>Arrears Only Indicator (Optional)</span>
+                    <input id="text" class="width strelka" type="text" readonly placeholder="None">
+                </div>
+
+                <div class="right">
+                    <label for="text">Intergovernmental Case Category (Optional)</label>
+                    <input id="text" class="width strelka" type="text" readonly placeholder="None">
+                </div>
+            </div>
+
+            <div class="block">
+
+                <div class="left">
+                    <label for="text">Assigned County of Ownership (Optional)</label>
+                    <input id="text" class="width strelka" type="text" readonly placeholder="None">
+                </div>
+
+                <div class="right">
+                    <label for="text">Intergovernmental Case Type (Optional)</label>
+                    <input id="text" class="width strelka" type="text" readonly placeholder="None">
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <label for="text">Intergovermental Case Status (Optional)</label>
+                    <input id="text" class="width strelka" type="text" readonly placeholder="None">
+                </div>
+
+                <div class="right">
+                    <label for="text">Case Number</label>
+                    <input id="text" class="width lupa" type="text" readonly placeholder="Search Case Number">
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <label for="text">Special Handling Indicator for Applicant (Optional)</label>
+                    <input id="text" class="width strelka" type="text" readonly placeholder="None">
+                </div>
+
+                <div class="right">
+                    <span>Referral Number</span>
+                    <input id="text" class="width lupa" type="text" readonly placeholder="Search Referral Number">
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <span>Special Handling Indicator for Other Parent
+                        (Optional)
+                    </span>
+                    <input id="text" class="width strelka" type="text" readonly placeholder="None">
+                </div>
+
+                <div class="right"></div>
+            </div>
+
+            <hr class="her">
+
+            <div class="info">System Information</div>
+            <div class="block">
+                <div class="left">
+                    <label for="text">Enrollment Taken by User (Optional)
+                    </label>
+                    <input id="text" class="width lupa" type="text" readonly value="Search Input">
+                </div>
+
+                <div class="right">
+                    <label for="text">Intake Supervisor (Optional)</label>
+                    <input id="text" class="width lupa" type="search" readonly placeholder="Search">
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left">
+                    <label for="text">Worker (Optional)</label>
+                    <input id="text" class="width lupa" type="text" readonly value="Search Input">
+                </div>
+
+                <div class="right">
+                    <label for="text">Owner (Optional)</label>
+                    <input id="text" class="width lupa" type="search" readonly value="Rajaneesh Banal">
+                </div>
+            </div>
+
+            <hr class="her">
+
+            <div class="button">
+                <label for="btn"></label>
+                <input class="pick" id="" type="button" value="Next">
+            </div>
+
+
+
+        </container>
+
+
+
+    </form>
+</body>
+
+</html>

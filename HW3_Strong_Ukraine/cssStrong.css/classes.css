@@ -1,0 +1,127 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+.header{
+    font-family: 'M PLUS 1', sans-serif;
+    min-height: 50px;
+    max-height: 117px;
+    text-align: center;
+    color: #E8C23E;
+    font-size: 48px;
+    font-weight: 400;
+}
+.bluehead{
+    color: #3E45E8;
+}
+.content{
+    height: 796px;
+    background-image: url("../img/image 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 199px;
+    padding-left: 80px;
+}
+.cont{
+    background: linear-gradient(180deg, rgba(30,141,242,1) 50%, rgba(251,226,1,1) 50%) 0 0 / 22px 100% no-repeat;
+    font-family: 'Inika', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding-left: 40px;
+    max-width: 1200px;
+   
+} 
+.h1{
+    font-family: 'Inika', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.main{
+    margin: 70px 0 25px 80px;
+}
+.line{
+    width: 402px;
+    height: 5px;
+    background: #3E45E8;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+  height: 480px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0px 4px 57px rgb(0 0 0 / 25%);
+}
+.card_img img{
+    width: 100%;
+}
+.cards{
+    margin-left: 80px;
+}
+.card2{
+    margin: 0 40px;
+}
+.card_title{
+    font-family: 'Inika', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1E8DF2;
+    padding: 10px;
+    box-sizing:border-box;
+}
+.card_subtitle{
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #E8C23E;
+    padding: 10px;
+    box-sizing:border-box;
+}
+.lineh2{
+    width: 402px;
+    height: 5px;
+    background: #3E45E8;
+    margin: 0 auto;
+}
+.h2{
+    font-family: 'Inika', serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+.flag{
+    text-align: center;
+}
+.supportbackground{
+    background-image: url("../img/Rectangle 6.png");
+    background-repeat: no-repeat;
+    width: 591px;
+    height: 121px;
+    margin: 50px auto;
+}
+.supporttext{
+    font-family: 'Inika', serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-left: 120px;
+    padding-top: 15px;
+}
+.bottom{
+    background-image: url("../img/bottom.png");
+    width: 100%;
+    height: 320px;
+}
+.mail{
+    font-family: 'Marcellus SC', serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;  
+    padding: 21px 0;
+}
+.refs{
+    text-align: center;
+}

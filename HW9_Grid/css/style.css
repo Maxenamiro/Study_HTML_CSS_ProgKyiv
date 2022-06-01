@@ -1,0 +1,155 @@
+:root {
+    font-size: 14px;
+}
+
+body {
+    background-color: #FFB084;
+}
+
+.page {
+    font-family:'Work Sans';
+    font-weight: 400;
+    margin: 5%;
+    display: grid;
+    gap: 15px 20px;
+    justify-content: center;
+    
+}
+
+.page>div {
+    background-color: white;
+    border-radius:  20px;
+    padding: 20px 30px;
+}
+
+.box1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    text-align: center;
+    box-shadow: 7px 7px 0px #000000;
+}
+
+.box2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    box-shadow: 7px 7px 0px #000000;
+}
+
+.box3 {
+    box-shadow: 7px 7px 0px #29A71E;
+}
+
+.box4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    box-shadow: 7px 7px 0px #E13535;
+}
+
+.box5 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    box-shadow: 7px 7px 0px #3675B0;
+}
+
+.box6 {
+    font-weight: 700;
+    box-shadow: 7px 7px 0px #000000;
+    align-self: end;
+}
+
+.box7 {
+    box-shadow: 7px 7px 0px #000000;
+}
+
+.title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+}
+
+.info {
+    text-align: start;
+    font-size: 0.9rem;
+    padding-top: 3px;
+    box-sizing: border-box;
+}
+
+pre {
+    margin: 0;
+    font-family:'Work Sans';
+}
+
+.info>div {
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.box2 div:nth-child(1), .box7 div:nth-child(1)  {
+    font-weight: 700;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.box3 div {
+    color: #29A71E;
+    font-weight: 700;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.box4 div {
+    color: #E13535;
+    font-weight: 700;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.box5 div {
+    color: #3675B0;
+    font-weight: 700;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 11%;
+    padding: 0;
+}
+
+@media screen and (max-width: 720px) {
+    :root {
+    height: 570px;
+    }
+   
+   .box1 {
+    grid-row-end: 1;
+   }
+
+   .box2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+   }
+
+   .box3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+   }
+
+   .box4  {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+   }
+
+   .box5 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+   }
+}

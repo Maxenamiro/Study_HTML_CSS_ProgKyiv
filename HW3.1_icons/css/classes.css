@@ -1,0 +1,96 @@
+.main_background {
+    background: #E5E5E5;
+    background-size: cover;
+    padding: 100px 0;
+}
+.square {
+    background: linear-gradient(#2137FC 50%, #FFCE22 50%);
+    height: 512px;
+    max-width: 512px;
+    margin: 100px 0 100px 100px;
+}
+
+.sho {
+    background-image: url("../img/Glyph.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.petcube {
+    background-image: url("../img/petcube_square.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.airplane {
+    background-image: url("../img/Plane.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
+}
+
+.diia {
+    background-image: url("../img/Vector.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle {
+    background: linear-gradient(to bottom, #2137FC 50%, #FFCE22 50%);
+    height: 512px;
+    background-repeat: no-repeat;
+    max-width: 512px;
+    margin: 0 100px 100px 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+}
+
+.extra {
+    background-position: bottom;
+}
+
+.pet_center {
+    background-position: center;
+}
+
+.plane_position {
+    background-position: center;
+}
+
+.black_square {
+    background-color: black;
+    height: 512px;
+    max-width: 512px;
+    margin: 0 100px 100px 100px;
+    box-sizing: border-box;
+    background-image: url("../img/Flag.png");
+    background-repeat: no-repeat;
+    background-position: 50% 81%;
+}
+
+.black_square2 {
+    background-color: black;
+    height: 512px;
+    max-width: 512px;
+    margin: 0 100px 100px 100px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-image: url("../img/Flag.png");
+    background-position: 4% 4%;
+}
+
+.black_square3 {
+    background-color: black;
+    height: 512px;
+    max-width: 512px;
+    margin: 0 100px 100px 100px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-image: url("../img/Flag.png"), url("../img/Flag.png");
+    background-position: 5% 5%, 95% 5%;
+}

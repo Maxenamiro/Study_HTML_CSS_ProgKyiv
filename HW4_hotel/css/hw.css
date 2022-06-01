@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PT Sans;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  
+
+  background-color: #202846;
+}
+
+.header_image {
+  height: 70px;
+  width: 179px;
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+
+  color: #FFFFFF;
+}
+
+.navlist_item {
+  display: flex;
+  align-items: center;
+
+  font-family: PT Sans;
+  font-weight: 700;
+
+  height: 57px;
+
+  padding: 0 40px 0 20px;
+  cursor: pointer;
+
+  border-right: 2px solid white;
+}
+
+.navlist_item:last-child {
+  border: none;
+}
+
+.item_image {
+  margin-right: 16px;
+}
+
+.content {
+  padding-left: 216px;
+}
+
+.content_header {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 48px;
+  background-color: #C6C6DC;
+  height: 140px;
+  width: 100%;
+  display: flex;
+  align-items:center;
+}
+
+.content_header_text {
+  margin-left: 227px;
+}
+
+.card {
+  position: relative;
+
+  background-color: #BDBDC6;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 35px 150px;
+  /* width: 1489 px; */
+}
+
+.card_description {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 17px;
+}
+
+.border {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+}
+
+.text {
+  background-color: #D7D7DD;
+  height: 190px;
+
+  padding: 20px 20px 0;
+
+  text-align: center;
+}
+
+.img {
+  margin: 28px 102px;
+}
+
+.test {
+  font-weight: 400;
+  border-bottom: 2px solid #FFFFFF;
+  margin: 3px 0 10px 0;
+}
+
+.star_image{
+  width: 50px;
+  height: 50px;
+  margin: 17px;
+}
+
+.star_image:hover {
+  filter: invert(14%) sepia(86%) saturate(6544%) hue-rotate(3deg) brightness(110%) contrast(121%);
+}
+
+.button {
+  position: absolute;
+
+  bottom: 10px;
+  right: -50px;
+
+  padding: 15px 45px;
+  border-radius: 30px;
+
+  color: white;
+  background-color: #202846;
+  border: none;
+}
+
+.footer {
+  background-color: #202846;
+  height: 90px;
+  color: white;
+  font-style: italic;
+  size: 36px;
+  padding: 0 60px;
+  display: flex;
+  align-items:center;
+}
+
+.scroll_up_button {
+  padding: 20px 25px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(85, 87, 104, 0.62);
+
+  position: sticky;
+  bottom: 100px;
+  left: 92%;
+}
+
+body{
+  background-color: #DCDCDC;
+
+}

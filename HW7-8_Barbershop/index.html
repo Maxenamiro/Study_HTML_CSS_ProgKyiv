@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../HW7-8_Barbershop/css/barbershop.css">
+    <title>DAPPER BULLY</title>
+</head>
+<!-- Матеріали
+
+ДЗ 7-8 
+https://www.figma.com/file/RV8JGYlqvAh2SZInSlRl60/hw-lesson-7-8?node-id=0%3A1
+
+Сторінка Gallery 
+До центру з лівої та правої сторони виїжджають по 2 картинки
+за першу секунду та бокові картинки з ліва та права додаються
+на другій секунді. Знадобиться анімація та трансформація
+транслейт 
+
+сторінка Services
+Картинки з кружечками мають крутитись дна за одною по часовій
+стрілці міняючись місцями (постійно анімуються, але не швидко,
+наприклад одна анімація триває 5секунд)
+
+Сторінка Contact Us
+Сторінка контактів. Враховуйте всі посилання вони мають
+бути робочими та вбудуйте карту з google map
+
+timing function https://cubic-bezier.com/#.17,.67,.83,.67
+перевірка властивостей для підтримки браузерами
+ https://caniuse.com/
+ https://html5test.com/
+
+
+Використовувати семантичну, адаптивну, респонсивну (гумову)
+верстку. 
+Розширення < 768px
+
+Gallery
+Кожна картинка починається з нової строки з'являються
+ одна з лівої  друга з правої сторони і т.д 
+
+Services
+Залишаємо анімацію кружків з тестом та прибираємо картинку
+ перукаря 
+
+Team
+Кожна картинка починається з нової строки при натиску на
+ зображення плавно з'являється ім'я члена команди 
+
+Contact Us
+Першою показується карта потім контакти 
+
+Розширення < 992px
+Gallery
+Робимо 3 рядки по 2 картинки ліві картинки виїжджають з лівої
+ сторони, а праві з правої.
+
+Services
+картинку перукаря робимо першою та з нової строки
+Залишаємо анімацію кружків з тестом
+
+Team
+2 співробітники на одній строці при наведені на зображення
+ плавно з'являється ім'я члена команди 
+
+Contact Us
+Першою показується контакти потім мапа 
+
+Розширення > 1620px
+Все як на макеті, але якщо розширення буде більшим, то мають
+ бути бокові відступи. 
+
+ -->
+
+<body>
+    <div class="page">
+        <div class="nav">
+            <div class="logo"><img src="./imgs/logo.svg" alt="logo"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Appointment</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hiddenmenu"><img src="./imgs/icons8-burger-64.png" alt="menu"></div>
+        </div>
+        <div class="dropdown">
+            <ul class="dropdown-content">
+                <li><a href="#">Appointment</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <div class="gallery container" id="gallery">
+                <div class="left_img"><img src="./imgs/left.png" alt="barbershop"></div>
+                <div class="center_img">
+                    <div class="row">
+                        <div class="photogallery animation1"><img src="./imgs/left_top_block.png" alt="barbershop">
+                        </div>
+                        <div class="photogallery rightmoove"><img src="./imgs/right_top_block.png" alt="barbershop">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="photogallery animation2"><img src="./imgs/left_bot_block.png" alt="barbershop">
+                        </div>
+                        <div class="photogallery leftmoove"><img src="./imgs/right_bot_block.png" alt="barbershop">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="photogalleryhidden animation2"><img src="./imgs/left.png" alt="barbershop">
+                        </div>
+                        <div class="photogalleryhidden animation1"> <img src="./imgs/right.png" alt="barbershop">
+                        </div>
+                    </div>
+                </div>
+                <div class="right_img"> <img src="./imgs/right.png" alt="barbershop"></div>
+            </div>
+
+
+            <div class="services container" id="services">
+                <div class="boximg1">
+                    <div class="photogallery2 animationcircle"><img src="./imgs/hair-styling.png" alt="Hair Styling">
+                        <div class="text">Hair Styling</div>
+                    </div>
+                    <div class="photogallery2 animationcircle2">
+                        <img src="./imgs/beard trimming.png" alt="Beard Trimming">
+                        <div class="text">Beard Trimming</div>
+                    </div>
+
+                    <div class="photogallery2  animationcircle3">
+                        <img src="./imgs/smooth shave.png" alt="Smooth Shave">
+                        <div class="text">Smooth Shave</div>
+                    </div>
+                    <div class="photogallery2  animationcircle4">
+                        <img src="./imgs/hair straigtening.png" alt="Hair Straightening">
+                        <div class="text">Hair Straightening</div>
+                    </div>
+
+                </div>
+                <div class="boximg2">
+                    <img src="./imgs/pants-img.png" alt="barbershop">
+                </div>
+            </div>
+            <div class="team container" id="team">
+                <div class="header">Meet our Highly Skilled Experts</div>
+                <div class="row teamphoto">
+                    <div class="mediarow">
+                        <div class="photo">
+                            <img src="./imgs/Meredith1.png" alt="Meredith">
+                            <div class="label">Meredith</div>
+                        </div>
+                        <div class="photo"><img src="./imgs/Jason2.png" alt="Jason">
+                            <div class="label">Jason</div>
+                        </div>
+                    </div>
+                    <div class="mediarow">
+                        <div class="photo"><img src="./imgs/Ryan3.png" alt="Ryan">
+                            <div class="label">Ryan</div>
+                        </div>
+                        <div class="photo photolast"><img src="./imgs/James4.png" alt="James">
+                            <div class="label">James</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts container" id="contacts">
+                <div class="adress">
+                    <div class="form">
+                        <div class="message">Get in touch with Us and send a Message
+                        </div>
+                        <div class="field">
+                            <form>
+                                <div class="rowform">
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                            </form>
+                            <textarea class="message-text" name="Message" cols="30" rows="7">Message</textarea>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.4364405928727!2d-73.9567353854526!3d40.77441827932511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258bec70850d9%3A0x1081f2ae95cf27b!2sDapper%20Duds%20Laundromat!5e0!3m2!1sru!2spl!4v1652352247843!5m2!1sru!2spl"
+                            width="640" height="570" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <footer>
+                    <div class="info">
+                        <div><a href="mailto: kumarpratiyush1405@gmail.com">Email : kumarpratiyush1405@gmail.com</a>
+                        </div>
+                        <div><a href="tel:+(972) 723429834">Phone : +(972) 723429834</a></div>
+                        <div>
+                            <address>Headquarters : 836th Avenue, 3rd Floor, <br>
+                                New York, <br>
+                                New York</address>
+                        </div>
+                    </div>
+                    <div class="hours">
+                        <div class="title">Opening Hours</div>
+                        <div class="table">Monday - Friday : 10:00 am - 05:00 pm <br>
+                            Saturday : 10:00 am - 02:00 pm</div>
+                    </div>
+                    <div class="social">
+                        <div class="title">Connect With Us on</div>
+                        <div class="last inst"><a href="https://www.instagram.com/"><img src="./imgs/inst.svg">
+                                Instagram</a></div>
+                        <div class="last facebook"><a href="https://www.facebook.com/"><img src="./imgs/facebook.svg">
+                                Facebook
+                            </a></div>
+                        <div class="last twitter"><a href="https://twitter.com/"><img
+                                    src="./imgs/twitter.svg">Twitter</a></div>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
